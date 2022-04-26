@@ -101,8 +101,6 @@ class Movie extends Component {
     const { totalCount, data: movies } = this.getPagedData();
     const { user } = this.props;
 
-    if (totalCount === 0) return <p>There are no movies in the database</p>;
-
     return (
       <div className='container'>
         <div className='row'>
